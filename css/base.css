@@ -1,0 +1,329 @@
+
+@charset "utf-8";
+* {
+	margin: 0;
+	 padding: 0
+	}
+body {
+	font: 12px "ËÎÌå", Arial, Helvetica, sans-serif;
+	background: #f5f5f5;
+	background: url(../images/MG4.jpg) center repeat-y;
+	background-position: 0% 99%;
+}
+img {
+	border: 0;
+	display: block
+}
+ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+a {
+	outline: none;
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.blank {
+	height: 5px;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	clear: both
+}
+
+.ibody {
+	background: url(../images/bg.png) repeat-y;
+	width: 1000px;
+	margin: auto;
+	box-shadow: -2px -1px 5px #666;
+}
+header {
+	position: relative;
+	background: url(../images/ibodybg.png) top right no-repeat;
+	background-color: #DED890;
+}
+header h1 {
+	padding: 15px 0 0 80px;
+	font-size: 22px;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	text-shadow: 1px  1px 1px #E1B830,   /*给文字添加阴影*/
+                  0 0 2px #E2DA43,
+                   0 0 4px #E2DA43,
+                   0 0 6px #E2DA43,
+                   0 0 8px #BBAF0B,
+                   0 0 10px #BBAF0B;
+}
+header h2 {
+	margin: 20px 80px;
+	color: #8e8d8d;
+	margin-bottom: 22px;
+}
+/* logo */
+.logo {
+	background: url(../images/logo.png) no-repeat #000 center;
+	width: 145px;
+	height: 145px;
+	border-radius: 50%;
+	position: absolute;
+	left: -72px;
+	top: 40px;
+	box-shadow: 0px 2px 2px #414141;
+}
+.logo:hover {
+	background: url(../images/home.png) no-repeat #000 center;
+}
+.logo a {
+	width: 100%;
+	height: 100%;
+	display: block
+}
+/* nav*/
+/*nav {
+	background: rgba(0,0,0,0.8);
+	height: 48px;
+	line-height: 48px;
+	padding-left: 80px;
+	position: absolute;
+	text-align: left;
+	font-size: 14px;
+	width: 200px;
+	-webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  -o-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	/*filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #3333333, endColorstr = #3333333);*/
+}
+/*nav a {
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	padding: 0 20px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}*/
+/*nav a:hover {
+	background: #e41635;
+}*/
+/**/
+.nav-menu {
+	display: block;
+	background: rgba(0,0,0,0.8);
+	width:200px;
+	margin: 0px auto 0px;
+}
+.nav-menu > li {
+  display: inline;
+  float:left;
+  width:14.5%;
+  border-right:1px solid #94c0be;
+}
+.nav-menu > li:last-child {
+  border-right: none;
+}
+.nav-menu li a {
+  color: #fff;
+	display: block;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-transform: capitalize;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 20px;
+	padding: 15px 30px 15px 31px;
+}
+
+/* animation domination */
+.three-d {
+  /* 任务三、设置3D舞台布景 */
+  -webkit-perspective: 200px;
+  -moz-perspective: 200px;
+  -ms-perspective: 200px;
+  -o-perspective: 200px;
+  perspective: 200px;
+
+  /*任务四、设置3D舞台布景过渡效果*/
+  -webkit-transition: all .07s linear;
+  -moz-transition: all .07s linear;
+  -ms-transition: all .07s linear;
+  -o-transition: all .07s linear;
+  transition: all .07s linear;
+  position: relative;
+}
+
+.three-d:not(.active):hover {
+  cursor: pointer;
+}
+/*任务五、给不是当前状态的3D舞台的悬浮与聚焦状态设置变形效果*/
+.three-d:not(.active):hover .three-d-box, 
+.three-d:not(.active):focus .three-d-box {
+  -wekbit-transform: translateZ(-25px) rotateX(90deg);
+  -moz-transform: translateZ(-25px) rotateX(90deg);
+  -o-transform: translateZ(-25px) rotateX(90deg);
+  -ms-transform: translateZ(-25px) rotateX(90deg);
+  transform: translateZ(-25px) rotateX(90deg);
+}
+
+.three-d-box {
+  /*任务六、给3D舞台中“.three-d-box”设置过渡与变形效果*/
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-transform: translatez(-25px);
+  -moz-transform: translatez(-25px);
+  -ms-transform: translatez(-25px);
+  -o-transform: translatez(-25px);
+  transform: translatez(-25px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*任务七、给导航设置3D前，与3D后变形效果*/
+.front {
+  -webkit-transform: rotatex(0deg) translatez(25px);
+  -moz-transform: rotatex(0deg) translatez(25px);
+  -ms-transform: rotatex(0deg) translatez(25px);
+  -o-transform: rotatex(0deg) translatez(25px);
+  transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+  -webkit-transform: rotatex(-90deg) translatez(25px);
+  -moz-transform: rotatex(-90deg) translatez(25px);
+  -ms-transform: rotatex(-90deg) translatez(25px);
+  -o-transform: rotatex(-90deg) translatez(25px);
+  transform: rotatex(-90deg) translatez(25px);
+  color: #FFE7C4;
+}
+
+.front, .back {
+  display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	padding: 15px 10px 15px 31px;	
+	color: white;
+	-webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*任务八、设置导航当前状态与悬浮状态下的背景效果*/
+.nav-menu li .active .front,
+.nav-menu li .active .back,
+.nav-menu li a:hover .front,
+.nav-menu li a:hover .back {
+  background-color: #4A4848;
+  -webkit-background-size: 5px 5px;
+  background-size: 5px 5px;
+  background-position: 0 0, 30px 30px;
+}
+.nav-menu ul {
+  position: absolute;
+	text-align: left;
+	line-height: 40px;
+	font-size: 14px;
+	width: 500px;
+	-webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  -o-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+#topnav_current {
+	background: #e41635;
+}
+article {
+	width: 73%;
+	float: left;
+	background: url(../images/ibodybg.png) 560px -147px no-repeat;
+	background-color: #FFFFFF;
+}
+aside {
+	width: 27%;
+	background: url(../images/ibodybg.png) -170px -147px no-repeat #898484;
+	float: right;
+}
+
+.copyright {
+	background: #0d0d0d;
+	border-radius: 50%;
+	text-align: center;
+	color: #d8d8d8;
+	padding: 20px;
+	margin: 60px 20px 0 20px;
+	border: #1b1a1a 1px solid;
+}
+.copyright p {
+	line-height: 26px;
+	text-shadow: #000 1px 1px 1px;
+}
+.copyright p a {
+	color: #d8d8d8;
+}
